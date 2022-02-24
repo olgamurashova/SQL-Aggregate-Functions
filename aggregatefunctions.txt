@@ -1,0 +1,13 @@
+1. Counting how many rows are in the table:
+
+SELECT COUNT(*)
+FROM table_name;
+
+SELECT COUNT(*)
+FROM table_name
+WHERE price = 0;
+
+2. Adding all the values in a particular column using SUM():
+
+ELECT SUM(downloads)
+FROM table_name;
