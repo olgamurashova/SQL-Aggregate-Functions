@@ -11,3 +11,30 @@ WHERE price = 0;
 
 ELECT SUM(downloads)
 FROM table_name;
+
+3. Using The MAX() and MIN() functions to return the highest and lowest values in a column:
+
+SELECT MIN(downloads)
+FROM table_name;
+
+SELECT MAX(price)
+FROM table_name;
+
+4. Calculating the average value of a particular column:
+
+SELECT AVG(downloads)
+FROM table_name;
+
+SELECT AVG(price)
+FROM table_name;
+
+5. Rounding the values in the column to the number of decimal places specified by the integer:
+
+SELECT ROUND(price, 0)
+FROM table_name;
+
+SELECT name, ROUND(price, 0)
+FROM table_name;
+
+SELECT ROUND(AVG(price), 2)
+FROM table_name;
