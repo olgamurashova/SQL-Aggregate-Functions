@@ -18,4 +18,28 @@ FROM startups;
 SELECT MAX(raised)
 FROM startups;
 
-5. 
+5. Returning the maximum amount of money raised, during ‘Seed’ stage:
+
+SELECT MAX(raised)
+FROM startups
+WHERE stage = 'Seed';
+
+6. Filtering the year the oldest company on the list was founded:
+
+SELECT MIN(founded)
+FROM startups;
+
+7. Returning the average valuation:
+
+SELECT AVG(valuation)
+FROM startups;
+
+8. Returning the average valuation, in each category:
+
+SELECT category, AVG(valuation)
+FROM startups
+GROUP BY category;
+
+9. 
+
+
