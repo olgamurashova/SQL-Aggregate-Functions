@@ -1,0 +1,21 @@
+1. Retrieving the table content:
+
+SELECT *
+FROM startups;
+
+2. Calculating the total number of companies in the table:
+
+SELECT COUNT(*)
+FROM startups;
+
+3. Calculating the total value of all companies in the table:
+
+SELECT SUM(valuation)
+FROM startups;
+
+4. Calculating the highest amount raised by a startup:
+
+SELECT MAX(raised)
+FROM startups;
+
+5. 
