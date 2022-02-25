@@ -59,3 +59,27 @@ GROUP BY price;
 SELECT category, SUM(downloads)
 FROM table_name
 GROUP BY category;
+
+7. Grouping by data:
+
+SELECT category, 
+   price,
+   AVG(downloads)
+FROM fake_apps
+GROUP BY 1, 2;
+
+8. Grouping data using HAVING clause:
+
+SELECT year,
+   genre,
+   COUNT(name)
+FROM movies
+GROUP BY 1, 2
+HAVING COUNT(name) > 10;
+
+SELECT price, 
+   ROUND(AVG(downloads)),
+   COUNT(*)
+FROM fake_apps
+GROUP BY price
+HAVING COUNT(*) > 10;
